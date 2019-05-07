@@ -37,8 +37,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  disabled: false,
-  icon: 'chevron-right'
+  disabled: false
 };
 
 export default Button;
