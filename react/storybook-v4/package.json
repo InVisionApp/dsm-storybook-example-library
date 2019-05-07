@@ -1,6 +1,6 @@
 {
-  "name": "react-sample",
-  "version": "0.1.2",
+  "name": "react-sample-v4",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@invisionapp/dsm-storybook": "0.0.35",

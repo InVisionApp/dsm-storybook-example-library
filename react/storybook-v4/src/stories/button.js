@@ -9,13 +9,10 @@ storiesOf('Button', module)
   .add(
     'Button',
     () => {
-      const sizeOptions = {
-        regular: 'regular',
-        smaller: 'smaller'
-      };
+      const iconOptions = { none: null, 'chevron-right': 'chevron-right' };
 
       return (
-        <Button size={select('size', sizeOptions, sizeOptions.regular)} disabled={boolean('disabled', false)}>
+        <Button icon={select('icon', iconOptions, iconOptions.none)} disabled={boolean('disabled', false)}>
           {text('children', 'TEXT')}
         </Button>
       );

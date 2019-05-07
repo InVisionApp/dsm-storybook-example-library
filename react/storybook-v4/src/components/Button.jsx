@@ -8,35 +8,37 @@ import './_button.scss';
 /**
  * Buttons indicate actions on the page. Each of our button types have specific purposes that are used consistently.
  * */
-const Button = ({ size, disabled, children }) => {
+const Button = ({ icon, disabled, children }) => {
   return (
-    <div className={`c-button ${size} ${disabled && 'disabled'}`}>
-      <div>{children}</div>
-      {/*<div>*/}
-      {/*  <SVGInline svg={chevronRightIcon} />*/}
-      {/*</div>*/}
+    <div className={`c-button ${icon && 'c-button__with-icon'} ${disabled && 'c-button__disabled'}`}>
+      <div className="c-button__content">{children}</div>
+      {icon && (
+        <div className="c-button__icon">
+          <SVGInline svg={chevronRightIcon} />
+        </div>
+      )}
     </div>
   );
 };
 
 Button.propTypes = {
   /**
-   * Changes the size of the Button
-   * */
-  size: PropTypes.oneOf(['regular', 'smaller']),
+   * Adds an icon to the button
+   */
+  icon: PropTypes.oneOf(['chevron-right']),
   /**
    * The content of the Button
    * */
   children: PropTypes.node,
   /**
-   * if true the button will be disabled
+   * Disable state of the button
    * */
   disabled: PropTypes.bool
 };
 
 Button.defaultProps = {
-  size: 'regular',
-  disabled: false
+  disabled: false,
+  icon: 'chevron-right'
 };
 
 export default Button;
