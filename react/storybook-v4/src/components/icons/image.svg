@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <path id="component-a" d="M0.342857148,55 C0.153502374,55 0,54.8460979 0,54.65625 L3.04518315e-15,0.343750005 C3.04518315e-15,0.15390212 0.153502374,0 0.342857148,0 L47.6571429,0 C47.8464976,0 48,0.15390212 48,0.343750005 L48,54.6571429 C48,54.8464976 47.8464976,55 47.6571429,55 L0.342857148,55 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(31 28)">
+    <path fill="#FFF" d="M0.342857148,55 C0.153502374,55 0,54.8460979 0,54.65625 L3.04518315e-15,0.343750005 C3.04518315e-15,0.15390212 0.153502374,0 0.342857148,0 L47.6571429,0 C47.8464976,0 48,0.15390212 48,0.343750005 L48,54.6571429 C48,54.8464976 47.8464976,55 47.6571429,55 L0.342857148,55 Z"/>
+    <polygon fill="#DEE0E4" points="1.349 38.349 22.349 38.349 22.349 47.081 10.648 59.349 4.991 59.349 1.349 55.567" transform="rotate(45 11.85 48.85)"/>
+    <polygon fill="#DEE0E4" points="22.675 29.568 34.042 29.568 48.538 44.01 25.557 67.645 22.675 67.645" transform="rotate(45 35.606 48.606)"/>
+    <polyline stroke="#363940" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="0 46.406 12 34.375 22.355 43.16"/>
+    <rect width="5.143" height="5.17" x="12.857" y="12.884" fill="#000" stroke="#363940" stroke-width="5.143" rx="2.571"/>
+    <polyline stroke="#363940" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="12 55 39.263 24.207 46.798 31.761"/>
+    <use stroke="#363940" stroke-width="3" xlink:href="#component-a"/>
+  </g>
+</svg>

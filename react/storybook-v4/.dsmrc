@@ -1,0 +1,7 @@
+{
+  "organization": "<organization>",
+  "authToken": "<authToken>",
+  "dsmHost": "<host>",
+  "outputDir": ".dsm",
+  "storyPath": "src/stories/**/*.js"
+}

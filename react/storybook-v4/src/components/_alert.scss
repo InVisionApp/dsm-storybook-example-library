@@ -1,0 +1,87 @@
+@keyframes fadeFromTop {
+  0% {
+    bottom: 200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.c-alert {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  min-height: 30px;
+  padding: 8px;
+  font-family: 'Helvetica', -apple-system, sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  user-select: none;
+  position: relative;
+  animation: fadeFromTop 2s 1;
+}
+
+.c-alert.default {
+  background-color: white;
+  border: #e6e6e8 1px solid;
+  border-top: #e6e6e8 4px solid;
+}
+
+.c-alert.warning {
+  background-color: #fef7e5;
+  border-top: #fecb48 4px solid;
+}
+
+.c-alert.info {
+  background-color: #e9f0ff;
+  border-top: #5175fc 4px solid;
+}
+
+.c-alert.success {
+  background-color: #e7fbd4;
+  border-top: #93b96c 4px solid;
+}
+
+.c-alert.error {
+  background-color: #feede7;
+  border-top: #e05e4b 4px solid;
+}
+
+.c-alert__message {
+  width: 100%;
+  margin: 0 8px 0 8px;
+}
+
+.c-alert__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.c-alert__icon.default {
+  fill: #e6e6e8;
+}
+.c-alert__icon.warning {
+  fill: #fecb48;
+}
+.c-alert__icon.info {
+  fill: #5175fc;
+}
+.c-alert__icon.success {
+  fill: #93b96c;
+}
+.c-alert__icon.error {
+  fill: #e05e4b;
+}
+
+.c-alert__icon.close {
+  cursor: pointer;
+  fill: #b6b9c7;
+  transition: fill 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
+}
+
+.c-alert__icon.close:hover {
+  cursor: pointer;
+  fill: #9295a3;
+}
