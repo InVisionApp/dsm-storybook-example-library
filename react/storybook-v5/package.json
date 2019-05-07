@@ -1,0 +1,43 @@
+{
+  "name": "react-sample-v5",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@invisionapp/dsm-storybook": "0.0.35",
+    "@storybook/addon-centered": "^5.1.0-alpha.39",
+    "@storybook/addon-knobs": "^5.1.0-alpha.39",
+    "@storybook/addon-links": "^5.1.0-alpha.39",
+    "@storybook/addon-options": "^5.1.0-alpha.39",
+    "@storybook/addons": "^5.1.0-alpha.39",
+    "@storybook/react": "^5.1.0-alpha.39",
+    "acorn": "^6.1.1",
+    "core-js": "^2.6.5",
+    "prop-types": "15.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.0",
+    "react-svg-inline": "2.1.1"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "dsm-storybook:publish": "dsm-storybook publish",
+    "dsm-storybook:preview": "dsm-storybook preview"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "precss": "^4.0.0",
+    "raw-loader": "1.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  }
+}
