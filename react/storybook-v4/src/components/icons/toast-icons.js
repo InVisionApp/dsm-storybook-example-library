@@ -1,6 +1,6 @@
 import { flagIcon, warnIcon, checkmarkIcon, errorIcon, infoIcon } from './index';
 
-const alertIcons = {
+const toastIcons = {
   default: flagIcon,
   warning: warnIcon,
   success: checkmarkIcon,
@@ -8,4 +8,4 @@ const alertIcons = {
   info: infoIcon
 };
 
-export { alertIcons };
+export { toastIcons };

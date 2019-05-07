@@ -2,12 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text, withKnobs } from '@storybook/addon-knobs';
 
-import Alert from '../components/Alert';
+import Toast from '../components/Toast';
 
-storiesOf('Alert', module)
+storiesOf('Toast', module)
   .addDecorator(withKnobs)
   .add(
-    'Alert',
+    'Toast',
     () => {
       const statusOptions = {
         default: 'default',
@@ -18,7 +18,7 @@ storiesOf('Alert', module)
       };
 
       return (
-        <Alert text={text('text', 'Something has happened')} status={select('status', statusOptions, statusOptions.default)} />
+        <Toast text={text('text', 'This is a notification that something went wrong')} status={select('status', statusOptions, statusOptions.default)} />
       );
     },
     {

@@ -1,4 +1,4 @@
 // Stories
-import './alert';
+import './toast';
 import './button';
 import './media-card';

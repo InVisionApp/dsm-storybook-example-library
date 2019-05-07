@@ -8,7 +8,7 @@
             <mask id="mask-2" fill="white">
                 <use xlink:href="#close-path"></use>
             </mask>
-            <use id="close-icon" fill-opacity="0.9" fill="#4C5664" fill-rule="nonzero" xlink:href="#close-path"></use>
+            <use id="close-icon" fill="#9E9E9E" fill-rule="nonzero" xlink:href="#close-path"></use>
         </g>
     </g>
 </svg>

@@ -1,25 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { closeIcon } from './icons';
-import { alertIcons } from './icons/alert-icons';
+import { toastIcons } from './icons/toast-icons';
 import SVGInline from 'react-svg-inline';
 
-import './_alert.scss';
+import './_toast.scss';
 
 /**
  * Alerts provide feedback for an action the user has taken. They can be placed anyone in a layout to associate the feedback with the action.
  * */
-const Alert = ({ text, status }) => {
+const Toast = ({ text, status }) => {
   return (
-    <div key={status} className={`c-alert ${status}`}>
-      <SVGInline className={`c-alert__icon ${status}`} svg={alertIcons[status]} />
-      <span className="c-alert__text">{text}</span>
-      <SVGInline className="c-alert__icon close" svg={closeIcon} />
+    <div key={status} className={`c-toast ${status}`}>
+      <SVGInline className={`c-toast__icon ${status}`} svg={toastIcons[status]} />
+      <span className="c-toast__text">{text}</span>
+      <SVGInline className="c-toast__close-icon" svg={closeIcon} />
     </div>
   );
 };
 
-Alert.propTypes = {
+Toast.propTypes = {
   /**
    * Changes the visual display of the alert
    * */
@@ -30,8 +30,8 @@ Alert.propTypes = {
   text: PropTypes.string
 };
 
-Alert.defaultProps = {
+Toast.defaultProps = {
   status: 'default'
 };
 
-export default Alert;
+export default Toast;
