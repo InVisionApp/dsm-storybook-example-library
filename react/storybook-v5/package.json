@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@invisionapp/dsm-storybook": "0.0.35",
-    "@storybook/addon-centered": "^5.1.0-alpha.39",
+    "@storybook/addon-centered": "5.1.0-alpha.20",
     "@storybook/addon-knobs": "^5.1.0-alpha.39",
     "@storybook/addon-links": "^5.1.0-alpha.39",
     "@storybook/addon-options": "^5.1.0-alpha.39",
