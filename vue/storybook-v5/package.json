@@ -1,0 +1,66 @@
+{
+  "name": "vue-sample-v4",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -s public",
+    "dsm-storybook:publish": "dsm-storybook publish",
+    "dsm-storybook:preview": "dsm-storybook preview"
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.9",
+    "@emotion/styled": "10.0.9",
+    "@invisionapp/dsm-storybook": "0.0.35",
+    "core-js": "^3.0.1",
+    "vue": "^2.6.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "5.1.0-beta.0",
+    "@storybook/addon-centered": "5.1.0-alpha.20",
+    "@storybook/addon-knobs": "5.1.0-beta.0",
+    "@storybook/addon-links": "5.1.0-beta.0",
+    "@storybook/addon-options": "5.1.0-beta.0",
+    "@storybook/vue": "5.1.0-beta.0",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-svg-loader": "^0.12.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

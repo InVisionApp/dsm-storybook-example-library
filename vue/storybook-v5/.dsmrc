@@ -1,0 +1,7 @@
+{
+  "organization": "<organization>",
+  "authToken": "<authToken>",
+  "dsmHost": "projects.invisionapp.com",
+  "outputDir": ".dsm",
+  "storyPath": "src/stories/**/*.js"
+}
