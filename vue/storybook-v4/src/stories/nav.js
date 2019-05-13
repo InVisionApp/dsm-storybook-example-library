@@ -11,16 +11,14 @@ storiesOf('Nav', module)
 
       return {
         components: { MyNav },
-        data: function() {
-          return {
-            initialTab: '1'
-          };
-        },
+        data: () => ({
+          initialTab: '1'
+        }),
         props: { tabsKnob: { default: object('tabs', tabs) } },
         template: '<my-nav :tabs=tabsKnob :initialActiveTab=initialTab ></my-nav>'
       };
     },
     {
-      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: '../components/MyNav.vue' }
+      'in-dsm': { id: '5cd924635fbc241ca04d2ea4', componentPath: '../components/MyNav.vue' }
     }
   );

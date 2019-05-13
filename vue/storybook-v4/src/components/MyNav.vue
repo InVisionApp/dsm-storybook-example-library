@@ -26,8 +26,7 @@ export default {
      * An array of the items to be displayed in the Nav.
      */
     tabs: {
-      type: Array,
-      default: []
+      type: Array
     },
     /**
      * The active tab Id to initialize the Nav component

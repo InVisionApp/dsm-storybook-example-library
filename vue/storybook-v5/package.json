@@ -1,6 +1,6 @@
 {
   "name": "vue-sample-v4",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "storybook": "start-storybook",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@emotion/core": "10.0.9",
     "@emotion/styled": "10.0.9",
-    "@invisionapp/dsm-storybook": "0.0.35",
+    "@invisionapp/dsm-storybook": "0.0.37",
     "core-js": "^3.0.1",
     "vue": "^2.6.6"
   },

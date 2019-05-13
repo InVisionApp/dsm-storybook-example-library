@@ -31,10 +31,13 @@
 .c-button:active {
   border: 1px solid rgba(72, 107, 255, 0.2);
   box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
-  padding: 9px 39px;
 
-  &.c-button__with-icon {
-    padding: 9px 12px;
+  &:not(.c-button__disabled) {
+    padding: 9px 39px;
+
+    &.c-button__with-icon {
+      padding: 9px 12px;
+    }
   }
 }
 

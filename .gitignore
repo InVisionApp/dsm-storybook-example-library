@@ -65,7 +65,7 @@ environment.env
 codeship.aes
 
 # storybook and dsm-storybook output
-*/storybook-static
-*/dist-dsm-storybook
-*/.dsm
+**/storybook-static
+**/dist-dsm-storybook
+**/.dsm
 
