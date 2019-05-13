@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue';
-import { withKnobs, object, text } from '@storybook/addon-knobs';
+import { withKnobs, object } from '@storybook/addon-knobs';
 import MyNav from '../components/MyNav.vue';
 
 storiesOf('Nav', module)
@@ -11,11 +11,16 @@ storiesOf('Nav', module)
 
       return {
         components: { MyNav },
-        props: { tabsKnob: { default: object('tabs', tabs) }, initialActiveTabKnob: { default: text('initialActiveTab', '1') } },
-        template: '<my-nav :tabs=tabsKnob :initialActiveTab=initialActiveTabKnob ></my-nav>'
+        data: function() {
+          return {
+            initialTab: '1'
+          };
+        },
+        props: { tabsKnob: { default: object('tabs', tabs) } },
+        template: '<my-nav :tabs=tabsKnob :initialActiveTab=initialTab ></my-nav>'
       };
     },
     {
-      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: '../components/MyButton.vue' }
+      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: '../components/MyNav.vue' }
     }
   );

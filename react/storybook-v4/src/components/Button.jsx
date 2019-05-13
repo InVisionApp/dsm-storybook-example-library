@@ -6,7 +6,7 @@ import SVGInline from 'react-svg-inline';
 import './_button.scss';
 
 /**
- * Buttons indicate actions on the page. Each of our button types have specific purposes that are used consistently.
+ * Buttons indicate actions on the page.
  * */
 const Button = ({ icon, disabled, children }) => {
   return (

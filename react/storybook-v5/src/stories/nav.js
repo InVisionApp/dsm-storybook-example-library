@@ -11,9 +11,9 @@ storiesOf('Nav', module)
     () => {
       const tabs = [{ id: '1', title: 'one' }, { id: '2', title: 'two' }, { id: '3', title: 'three' }];
 
-      return <Nav tabs={object('tabs', tabs)} activeTab={'1'} />;
+      return <Nav tabs={object('tabs', tabs)} initialActiveTab={'1'} />;
     },
     {
-      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', version: '2.0.2' }
+      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', version: '1.0.0' }
     }
   );

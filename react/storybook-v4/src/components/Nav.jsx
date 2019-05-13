@@ -1,22 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import './_nav.scss';
 
-class Nav extends React.Component {
+/**
+ * Used for site navigation.
+ */
+class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: props.activeTab };
+    this.state = { activeTab: props.initialActiveTab };
   }
 
   static propTypes = {
+    /**
+     * An array of the items to be displayed in the Nav.
+     */
     tabs: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired
       })
     ),
-    activeTab: PropTypes.string
+    /**
+     * The active tab Id to initialize the Nav component
+     */
+    initialActiveTab: PropTypes.string
   };
 
   selectTab = (tabId) => {

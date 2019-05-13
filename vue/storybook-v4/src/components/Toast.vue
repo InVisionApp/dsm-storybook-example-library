@@ -7,23 +7,28 @@
 </template>
 
 <script>
-import { flagIcon, warnIcon, checkmarkIcon, errorIcon, infoIcon, closeIcon } from './icons';
+import { closeIcon } from './icons';
+import { toastIcons } from './icons/toast-icons';
+
 /**
- * This is a description coming from the MyButton component code
+ * Alerts provide feedback for an action the user has taken. They can be placed anyone in a layout to associate the feedback with the action.
  */
 export default {
   name: 'toast',
 
   components: {
     'close-icon': closeIcon,
-    'default-icon': flagIcon,
-    'info-icon': infoIcon,
-    'warning-icon': warnIcon,
-    'success-icon': checkmarkIcon,
-    'error-icon': errorIcon
+    'default-icon': toastIcons.default,
+    'info-icon': toastIcons.info,
+    'warning-icon': toastIcons.warning,
+    'success-icon': toastIcons.success,
+    'error-icon': toastIcons.error
   },
 
   props: {
+    /**
+     * Changes the visual display of the alert
+     * */
     status: {
       type: String,
       default: 'default',
@@ -31,6 +36,9 @@ export default {
         return ['default', 'warning', 'info', 'error', 'success'].indexOf(value) !== -1;
       }
     },
+    /**
+     * The content of the alert
+     * */
     text: String
   }
 };

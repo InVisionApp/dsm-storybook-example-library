@@ -23,7 +23,7 @@ Toast.propTypes = {
   /**
    * Changes the visual display of the alert
    * */
-  status: PropTypes.oneOf(['default', 'warning', 'info', 'success']),
+  status: PropTypes.oneOf(['default', 'warning', 'error', 'info', 'success']),
   /**
    * The content of the alert
    * */

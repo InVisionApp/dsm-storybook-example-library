@@ -18,10 +18,13 @@ storiesOf('Toast', module)
       };
 
       return (
-        <Toast text={text('text', 'This is a notification that something went wrong')} status={select('status', statusOptions, statusOptions.default)} />
+        <Toast
+          text={text('text', 'This is a notification that something went wrong')}
+          status={select('status', statusOptions, statusOptions.default)}
+        />
       );
     },
     {
-      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', version: '2.0.2' }
+      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', version: '1.0.0' }
     }
   );

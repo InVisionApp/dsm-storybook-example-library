@@ -11,8 +11,9 @@
 
 <script>
 import { chevronRightIcon } from './icons';
+
 /**
- * This is a description coming from the MyButton component code
+ * Buttons indicate actions on the page.
  */
 export default {
   name: 'my-button',
@@ -20,6 +21,9 @@ export default {
   components: { 'chevron-right': chevronRightIcon },
 
   props: {
+    /**
+     * Adds an icon to the button
+     */
     icon: {
       type: String,
       default: 'none',
@@ -27,6 +31,9 @@ export default {
         return ['none', 'chevron-right'].indexOf(value) !== -1;
       }
     },
+    /**
+     * Disable state of the button
+     * */
     disabled: {
       type: Boolean,
       default: false

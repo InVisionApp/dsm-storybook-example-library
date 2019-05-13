@@ -10,7 +10,7 @@
 
 <script>
 /**
- * This is a description coming from the MyButton component code
+ * Used for site navigation.
  */
 export default {
   name: 'my-nav',
@@ -22,10 +22,16 @@ export default {
   },
 
   props: {
+    /**
+     * An array of the items to be displayed in the Nav.
+     */
     tabs: {
       type: Array,
       default: []
     },
+    /**
+     * The active tab Id to initialize the Nav component
+     */
     initialActiveTab: String
   },
 
