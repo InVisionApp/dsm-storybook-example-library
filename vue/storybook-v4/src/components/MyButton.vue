@@ -1,5 +1,5 @@
 <template>
-  <div  v-bind:class="['c-button', {'c-button__disabled': disabled}, {'c-button__with-icon': icon !== 'none'}]">
+  <div v-bind:class="['c-button', {'c-button__disabled': disabled}, {'c-button__with-icon': icon !== 'none'}]">
     <div class="c-button__content">
       <slot></slot>
     </div>
