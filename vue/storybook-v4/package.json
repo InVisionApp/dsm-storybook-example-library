@@ -15,6 +15,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@storybook/addon-actions": "^4.1.18",
+    "@storybook/addon-a11y": "4.2.0-alpha.11",
     "@storybook/addon-centered": "^4.1.18",
     "@storybook/addon-knobs": "^4.1.18",
     "@storybook/addon-links": "^4.1.18",

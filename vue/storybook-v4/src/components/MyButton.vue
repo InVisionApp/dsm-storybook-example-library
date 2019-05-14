@@ -1,12 +1,13 @@
 <template>
-  <div v-bind:class="['c-button', {'c-button__disabled': disabled}, {'c-button__with-icon': icon !== 'none'}]">
+  <button v-bind:class="['c-button', {'c-button__disabled': disabled}, {'c-button__with-icon': icon !== 'none'}]"
+       @click="!disabled && onClick()">
     <div class="c-button__content">
       <slot></slot>
     </div>
     <div v-if="icon !== 'none'" class="c-button__icon">
       <chevron-right v-if="icon === 'chevron-right'" />
     </div>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -37,7 +38,11 @@ export default {
     disabled: {
       type: Boolean,
       default: false
-    }
+    },
+    /**
+     * The function to be called when the button is clicked
+     */
+    onClick: Function
   }
 };
 </script>

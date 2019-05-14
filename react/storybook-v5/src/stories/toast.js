@@ -19,7 +19,7 @@ storiesOf('Toast', module)
 
       return (
         <Toast
-          text={text('text', 'This is a notification that something went wrong')}
+          text={text('text', 'This is a notification message')}
           status={select('status', statusOptions, statusOptions.default)}
         />
       );

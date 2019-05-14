@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import MyButton from '../components/MyButton.vue';
 
 storiesOf('Button', module)
@@ -15,7 +16,8 @@ storiesOf('Button', module)
           disabledKnob: { default: boolean('disabled', false) },
           iconKnob: { default: select('icon', iconValues, 'none') }
         },
-        template: '<my-button :icon=iconKnob :disabled=disabledKnob>{{textKnob}}</my-button>'
+        methods: { buttonClick: action('button-clicked') },
+        template: '<my-button :onClick=buttonClick :icon=iconKnob :disabled=disabledKnob>{{textKnob}}</my-button>'
       };
     },
     {

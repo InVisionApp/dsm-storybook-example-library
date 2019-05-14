@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
 import Button from '../components/Button';
 
@@ -12,7 +13,11 @@ storiesOf('Button', module)
       const iconOptions = { none: null, 'chevron-right': 'chevron-right' };
 
       return (
-        <Button icon={select('icon', iconOptions, iconOptions.none)} disabled={boolean('disabled', false)}>
+        <Button
+          onClick={action('Button clicked')}
+          icon={select('icon', iconOptions, iconOptions.none)}
+          disabled={boolean('disabled', false)}
+        >
           {text('children', 'TEXT')}
         </Button>
       );

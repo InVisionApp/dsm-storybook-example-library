@@ -8,16 +8,19 @@ import './_button.scss';
 /**
  * Buttons indicate actions on the page.
  * */
-const Button = ({ icon, disabled, children }) => {
+const Button = ({ onClick, icon, disabled, children }) => {
   return (
-    <div className={`c-button ${icon && 'c-button__with-icon'} ${disabled && 'c-button__disabled'}`}>
+    <button
+      onClick={!disabled && onClick}
+      className={`c-button ${icon && 'c-button__with-icon'} ${disabled && 'c-button__disabled'}`}
+    >
       <div className="c-button__content">{children}</div>
       {icon && (
         <div className="c-button__icon">
           <SVGInline svg={chevronRightIcon} />
         </div>
       )}
-    </div>
+    </button>
   );
 };
 
@@ -33,7 +36,11 @@ Button.propTypes = {
   /**
    * Disable state of the button
    * */
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  /**
+   * The function to be called when the button is clicked
+   */
+  onClick: PropTypes.func
 };
 
 Button.defaultProps = {

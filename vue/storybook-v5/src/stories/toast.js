@@ -12,7 +12,7 @@ storiesOf('Toast', module)
       return {
         components: { Toast },
         props: {
-          textKnob: { default: text('text', 'This is a notification that something went wrong') },
+          textKnob: { default: text('text', 'This is a notification message') },
           statusKnob: { default: select('status', iconValues, 'default') }
         },
         template: '<toast :status=statusKnob>{{textKnob}}</toast>'
