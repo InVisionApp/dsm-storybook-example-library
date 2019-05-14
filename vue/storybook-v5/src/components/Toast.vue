@@ -11,7 +11,7 @@ import { closeIcon } from './icons';
 import { toastIcons } from './icons/toast-icons';
 
 /**
- * Alerts provide feedback for an action the user has taken. They can be placed anyone in a layout to associate the feedback with the action.
+ * Toasts provide dismissable feedback\information for the user.
  */
 export default {
   name: 'toast',
@@ -27,7 +27,7 @@ export default {
 
   props: {
     /**
-     * Changes the visual display of the alert
+     * Changes the visual display of the toast
      * */
     status: {
       type: String,
@@ -37,7 +37,7 @@ export default {
       }
     },
     /**
-     * The content of the alert
+     * The content of the toast
      * */
     text: String
   }

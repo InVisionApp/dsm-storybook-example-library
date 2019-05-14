@@ -1,4 +1,4 @@
 // Stories
-import './toast';
 import './button';
+import './toast';
 import './nav';

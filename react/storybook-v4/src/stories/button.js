@@ -13,7 +13,7 @@ storiesOf('Button', module)
 
       return (
         <Button icon={select('icon', iconOptions, iconOptions.none)} disabled={boolean('disabled', false)}>
-          {text('children', 'TEXT')}
+          {text('text', 'TEXT')}
         </Button>
       );
     },

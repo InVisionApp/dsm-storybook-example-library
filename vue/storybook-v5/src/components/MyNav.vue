@@ -10,7 +10,7 @@
 
 <script>
 /**
- * Used for site navigation.
+ * The Nav is used for site navigation.
  */
 export default {
   name: 'my-nav',

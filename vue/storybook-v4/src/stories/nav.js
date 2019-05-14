@@ -11,8 +11,8 @@ storiesOf('Nav', module)
 
       return {
         components: { MyNav },
-        props: { tabsKnob: { default: object('tabs', tabs) }, initialActiveTabKnob: { default: text('initialActiveTab', '1') } },
-        template: '<my-nav :tabs=tabsKnob :initialActiveTab=initialActiveTabKnob ></my-nav>'
+        props: { tabsKnob: { default: object('tabs', tabs) } },
+        template: '<my-nav :tabs=tabsKnob initialActiveTab="1" ></my-nav>'
       };
     },
     {

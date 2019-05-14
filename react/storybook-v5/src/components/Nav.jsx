@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './_nav.scss';
 
 /**
- * Used for site navigation.
+ * The Nav is used for site navigation.
  */
 class Nav extends Component {
   constructor(props) {

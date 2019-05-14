@@ -7,7 +7,7 @@ import SVGInline from 'react-svg-inline';
 import './_toast.scss';
 
 /**
- * Alerts provide feedback for an action the user has taken. They can be placed anyone in a layout to associate the feedback with the action.
+ * Toasts provide dismissable feedback\information for the user.
  * */
 const Toast = ({ text, status }) => {
   return (
@@ -21,11 +21,11 @@ const Toast = ({ text, status }) => {
 
 Toast.propTypes = {
   /**
-   * Changes the visual display of the alert
+   * Changes the visual display of the toast
    * */
   status: PropTypes.oneOf(['default', 'warning', 'error', 'info', 'success']),
   /**
-   * The content of the alert
+   * The content of the toast
    * */
   text: PropTypes.string
 };
