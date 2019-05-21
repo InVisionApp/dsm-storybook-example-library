@@ -4,8 +4,11 @@ import { object, withKnobs } from '@storybook/addon-knobs';
 
 import Nav from '../components/Nav';
 
+const navWrapper = (storyFn) => <div style={{ backgroundColor: 'white', padding: 25 }}>{storyFn()}</div>;
+
 storiesOf('Nav', module)
   .addDecorator(withKnobs)
+  .addDecorator(navWrapper)
   .add(
     'Nav',
     () => {
