@@ -1,5 +1,7 @@
 # DSM-Storybook Example Library Live Components Sample
 
+![](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/InVisionApp/dsm-storybook-example-library/blob/master/LICENSE.txt)
 
 A sample repository with `DSM-Storybook` plugin integration for Storybook.
 In the samples there are sample projects for Storybook in React and Vue frameworks.
