@@ -22,7 +22,7 @@ If it didn't help create an issue with:
 
 Right now we only run manual testing.
 
-#####Test plan
+**Test plan**
 
 1. run `npm run dsm-storybook:preview`, There shouldn't be any errors in the console and Storybook will be opened in the browser.
 2. enter each component and make sure that:
