@@ -9,7 +9,7 @@
     "dsm-storybook:preview": "dsm-storybook preview"
   },
   "dependencies": {
-    "@invisionapp/dsm-storybook": "0.0.41",
+    "@invisionapp/dsm-storybook": "0.0.46",
     "vue": "^2.6.6"
   },
   "devDependencies": {
