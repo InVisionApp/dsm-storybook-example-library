@@ -1,0 +1,9 @@
+<button [ngClass]="{'c-button': true, 'c-button__disabled': disabled, 'c-button__with-icon': icon !== 'none'}"
+        (click)="!disabled && onClick()">
+  <div class="c-button__content">
+    {{ text }}
+  </div>
+  <div *ngIf="icon !== 'none'" class="c-button__icon">
+    <img alt="chevron-right" src="./icons/chevron-right.svg" />
+  </div>
+</button>
