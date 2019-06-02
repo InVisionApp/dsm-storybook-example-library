@@ -1,12 +1,15 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 import { ButtonComponent } from '../app/components/button/button.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
   .addDecorator(
     moduleMetadata({
-      declarations: [ButtonComponent]
+      declarations: [ButtonComponent],
+      imports: [HttpClientModule, AngularSvgIconModule]
     })
   )
   .add(

@@ -1,0 +1,7 @@
+<ul class="c-nav">
+  <li *ngFor="let tab of tabs; trackBy: trackById" class="c-nav__tab" (click)="setActiveTab(tab)">
+    <div [ngClass]="{'c-nav__tab-content': true, 'c-nav__tab--active': activeTab === tab.id }">
+      {{tab.title}}
+    </div>
+  </li>
+</ul>

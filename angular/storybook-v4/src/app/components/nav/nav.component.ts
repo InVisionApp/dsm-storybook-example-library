@@ -15,7 +15,6 @@ export class NavComponent implements OnInit {
   initialActiveTab: string;
 
   ngOnInit() {
-    console.log(this.initialActiveTab);
     this.activeTab = this.initialActiveTab;
   }
 
