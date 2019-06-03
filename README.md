@@ -1,10 +1,12 @@
-# DSM-Storybook Example Library Live Components Sample
+
+# DSM-Storybook Live Components Example
 
 ![Version: 1.0.0](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/InVisionApp/dsm-storybook-example-library/blob/master/LICENSE.txt)
 
-A sample repository with `DSM-Storybook` plugin integration for Storybook.
-In the samples there are sample projects for Storybook in React and Vue frameworks.
+Reference implementation for InVision's [DSM Live Components feature](https://support.invisionapp.com/hc/en-us/articles/360028214732).  The feature allows embedding Storybook stories in DSM to create a single source of truth for your product teams across design and development. 
+
+This repository includes example library implementations in React and Vue that are pre-configured for the [@dsm-storybook](https://www.npmjs.com/package/@invisionapp/dsm-storybook) plugin. 
 
 ## Setup
 
@@ -21,6 +23,10 @@ To run the sample Storybook with dsm-storybook integration locally, run:
 ```
 npm run dsm-storybook:preview
 ```
+
+## Publish to DSM
+
+Follow the steps documented in the [Getting started with live components](https://support.invisionapp.com/hc/en-us/articles/360028509991) article to embed the example components in DSM. 
 
 ## License
 
