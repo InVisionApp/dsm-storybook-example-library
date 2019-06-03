@@ -1,5 +1,9 @@
 {
   "name": "dsm-storybook-example-library",
   "private": true,
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6"
+  }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/Info Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.96875,8.984375 L12.96875,6.96875 L11,6.96875 L11,8.984375 L12.96875,8.984375 Z M12.96875,17 L12.96875,11 L11,11 L11,17 L12.96875,17 Z M4.90625,4.953125 C6.87500984,2.98436516 9.23436125,2 11.984375,2 C14.7343888,2 17.0859277,2.97655273 19.0390625,4.9296875 C20.9921973,6.88282227 21.96875,9.23436125 21.96875,11.984375 C21.96875,14.7343888 20.9921973,17.0859277 19.0390625,19.0390625 C17.0859277,20.9921973 14.7343888,21.96875 11.984375,21.96875 C9.23436125,21.96875 6.88282227,20.9921973 4.9296875,19.0390625 C2.97655273,17.0859277 2,14.7343888 2,11.984375 C2,9.23436125 2.96874031,6.89063469 4.90625,4.953125 Z" id="info-circle-path"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Close">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#info-circle-path"></use>
+            </mask>
+            <use id="info-circle-icon" fill-opacity="0.9" fill="#A2CEFF" fill-rule="nonzero" xlink:href="#info-circle-path"></use>
+        </g>
+    </g>
+</svg>
