@@ -9,18 +9,18 @@
     "dsm-storybook:preview": "dsm-storybook preview"
   },
   "dependencies": {
-    "@invisionapp/dsm-storybook": "0.0.51",
+    "@invisionapp/dsm-storybook": "0.0.52",
     "vue": "^2.6.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
-    "@storybook/addon-actions": "^4.1.18",
+    "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-a11y": "4.2.0-alpha.11",
-    "@storybook/addon-centered": "^4.1.18",
-    "@storybook/addon-knobs": "^4.1.18",
-    "@storybook/addon-options": "^4.1.18",
-    "@storybook/addons": "^4.1.18",
-    "@storybook/vue": "^4.1.18",
+    "@storybook/addon-knobs": "4.1.18",
+    "@storybook/addon-options": "4.1.18",
+    "@storybook/addon-backgrounds": "4.1.18",
+    "@storybook/addons": "4.1.18",
+    "@storybook/vue": "4.1.18",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-service": "^3.5.0",

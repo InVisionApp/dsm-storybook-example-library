@@ -17,9 +17,13 @@ function loadStories() {
 //
 // function setCustomOptions() {
 //   addParameters({
-//     options: { theme: themes.dark }
+//     options: { theme: { ...themes.dark, brandTitle: 'Custom Title!' } }
 //   });
 // }
+
+addParameters({
+  backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }, { name: 'white', value: '#333' }]
+});
 
 addDecorator(withA11y);
 addDecorator(centered);

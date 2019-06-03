@@ -11,7 +11,7 @@
   "dependencies": {
     "@emotion/core": "10.0.9",
     "@emotion/styled": "10.0.9",
-    "@invisionapp/dsm-storybook": "0.0.51",
+    "@invisionapp/dsm-storybook": "0.0.52",
     "core-js": "^3.0.1",
     "vue": "^2.6.6"
   },
@@ -22,6 +22,7 @@
     "@storybook/addon-centered": "5.1.0-rc.4",
     "@storybook/addon-knobs": "5.1.0-rc.4",
     "@storybook/addon-options": "5.1.0-rc.4",
+    "@storybook/addon-backgrounds": "5.1.0-rc.4",
     "@storybook/vue": "5.1.0-rc.4",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
