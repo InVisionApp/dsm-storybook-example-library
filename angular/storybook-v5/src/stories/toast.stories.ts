@@ -1,5 +1,5 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { ToastComponent } from '../app/components/toast/toast.component';
 import { AppIconComponent } from '../app/components/icons/app-icon.component';
 import { HttpClientModule } from '@angular/common/http';

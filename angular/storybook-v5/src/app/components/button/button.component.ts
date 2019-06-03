@@ -20,5 +20,5 @@ export class ButtonComponent {
   icon: 'none' | 'chevron-right' = 'none';
 
   @Input()
-  onClick: Function = () => {};
+  onClick: Function;
 }

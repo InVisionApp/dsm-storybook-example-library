@@ -39,6 +39,7 @@
     "@storybook/addon-actions": "^5.1.0-rc.4",
     "@storybook/addon-knobs": "^5.1.0-rc.4",
     "@storybook/addon-options": "^5.1.0-rc.4",
+    "@storybook/addon-a11y": "5.1.0-rc.4",
     "@storybook/addons": "^5.1.0-rc.4",
     "@storybook/angular": "^5.1.0-rc.4",
     "@types/jasmine": "~3.3.8",
