@@ -1,5 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+/**
+ * The Nav is used for site navigation.
+ */
 @Component({
   selector: 'nav-component',
   templateUrl: './nav.component.html',
@@ -8,9 +11,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   activeTab;
 
+  /**
+   * An array of the items to be displayed in the Nav.
+   */
   @Input()
   tabs: Array<object>;
 
+  /**
+   * The active tab Id to initialize the Nav component
+   */
   @Input()
   initialActiveTab: string;
 

@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
 
+/**
+ * Toasts provide dismissable feedback\information for the user.
+ * */
 @Component({
   selector: 'toast-component',
   templateUrl: './toast.component.html',
@@ -14,9 +17,15 @@ export class ToastComponent {
     info: 'infoIcon'
   };
 
+  /**
+   * The content of the toast
+   * */
   @Input()
   text: string;
 
+  /**
+   * Changes the visual display of the toast
+   * */
   @Input()
   status: 'default' | 'warning' | 'error' | 'info' | 'success' = 'default';
 }
