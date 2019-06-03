@@ -62,23 +62,23 @@
   width: 24px;
 }
 
-.icon--default {
+.icon.default {
   fill: $color-gray;
 }
 
-.icon--warning {
+.icon.warning {
   fill: $color-warning;
 }
 
-.icon--success {
+.icon.success {
   fill: $color-success;
 }
 
-.icon--error {
+.icon.error {
   fill: $color-error;
 }
 
-.icon--info {
+.icon.info {
   fill: $color-info;
 }
 
