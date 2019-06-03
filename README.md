@@ -6,7 +6,7 @@
 
 Reference implementation for InVision's [DSM Live Components feature](https://support.invisionapp.com/hc/en-us/articles/360028214732).  The feature allows embedding Storybook stories in DSM to create a single source of truth for your product teams across design and development. 
 
-This repository includes example library implementations in React and Vue that are pre-configured for the [@dsm-storybook](https://www.npmjs.com/package/@invisionapp/dsm-storybook) plugin. 
+This repository includes example library implementations in React, Vue and Angular that are pre-configured for the [@dsm-storybook](https://www.npmjs.com/package/@invisionapp/dsm-storybook) plugin. 
 
 ## Setup
 
