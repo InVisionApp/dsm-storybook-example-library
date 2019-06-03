@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'button-component',
@@ -19,6 +19,10 @@ export class ButtonComponent {
   @Input()
   icon: 'none' | 'chevron-right' = 'none';
 
-  @Input()
-  action: Function;
+  @Output()
+  didClick = new EventEmitter<void>();
+
+  action() {
+    this.didClick.emit();
+  }
 }

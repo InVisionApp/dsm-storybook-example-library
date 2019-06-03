@@ -18,7 +18,7 @@ storiesOf('Button', module)
     'Button Component',
     () => ({
       template:
-        '<button-component [action]="actionProp" [text]="textKnob" [icon]="iconKnob" [disabled]="disabledKnob"></button-component>',
+        '<button-component (didClick)="actionProp()" [text]="textKnob" [icon]="iconKnob" [disabled]="disabledKnob"></button-component>',
       component: ButtonComponent,
       props: {
         textKnob: text('text', 'TEXT'),

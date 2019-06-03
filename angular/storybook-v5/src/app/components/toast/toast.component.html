@@ -1,7 +1,7 @@
 <div [ngClass]="['c-toast ', status]">
-  <app-icons [icon]="icons[status]" [class]="'c-toast__icon--' + status"></app-icons>
-  <span class="c-toast__text">
+  <app-icons [icon]="icons[status]" [class]="'icon icon--' + status"></app-icons>
+  <span class="text">
     {{text}}
   </span>
-  <app-icons icon="closeIcon" class="c-toast__close-icon"></app-icons>
+  <app-icons icon="closeIcon" class="icon close-icon"></app-icons>
 </div>

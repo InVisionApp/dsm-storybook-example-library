@@ -13,7 +13,7 @@
   transition: background-color 0.2s, color 0.2s, width 0.2s, box-shadow 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
 }
 
-.c-button__content {
+.content {
   font-family: $font-family;
   letter-spacing: 1.08px;
   line-height: 20px;
@@ -21,16 +21,16 @@
   font-weight: bold;
 }
 
-.c-button__with-icon {
+.with-icon {
   padding: 10px 13px;
 }
 
-.c-button__icon-container {
+.icon-container {
   height: 25px;
   margin-left: 50px;
 }
 
-.c-button__icon {
+.icon {
   height: 25px;
 }
 
@@ -38,10 +38,10 @@
   border: 1px solid rgba(72, 107, 255, 0.2);
   box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
 
-  &:not(.c-button__disabled) {
+  &:not(.disabled) {
     padding: 9px 39px;
 
-    &.c-button__with-icon {
+    &.with-icon {
       padding: 9px 12px;
     }
   }
@@ -62,7 +62,7 @@
   fill: $color-white;
 }
 
-.c-button__disabled {
+.disabled {
   cursor: not-allowed;
   background-color: $color-disabled !important;
   color: $color-gray;

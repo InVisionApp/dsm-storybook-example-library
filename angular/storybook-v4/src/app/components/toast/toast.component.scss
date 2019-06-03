@@ -52,42 +52,37 @@
   border-top: rgba(242, 79, 99, 0.9) 6px solid;
 }
 
-.c-toast__text {
+.text {
   width: 100%;
   margin: 0 8px 0 8px;
 }
 
-.c-toast__icon {
-  width: 24px;
+.icon {
   height: 24px;
+  width: 24px;
 }
 
-.c-toast__icon--default {
+.icon--default {
   fill: $color-gray;
 }
 
-.c-toast__icon--warning {
+.icon--warning {
   fill: $color-warning;
 }
 
-.c-toast__icon--success {
+.icon--success {
   fill: $color-success;
 }
 
-.c-toast__icon--error {
+.icon--error {
   fill: $color-error;
 }
 
-.c-toast__icon--info {
+.icon--info {
   fill: $color-info;
 }
 
-.c-toast__close-icon {
+.close-icon {
   cursor: pointer;
-  transition: fill 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
   fill: $color-gray;
-}
-
-.c-toast__icon.close:hover {
-  cursor: pointer;
 }
