@@ -6,8 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
+  icons = {
+    'chevron-right': 'chevronRightIcon'
+  };
+
   @Input()
-  text: string;
+  text: string = '';
 
   @Input()
   disabled: boolean = false;

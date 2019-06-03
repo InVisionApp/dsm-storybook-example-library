@@ -5,7 +5,10 @@ module.exports = {
         test: /\.svg$/,
         loader: 'svg-inline-loader',
         options: {
-          removeTags: true
+          removeTags: true,
+          removingTags: ['title', 'desc'],
+          removeSVGTagAttrs: false,
+          removingTagAttrs: ['fill']
         }
       }
     ]

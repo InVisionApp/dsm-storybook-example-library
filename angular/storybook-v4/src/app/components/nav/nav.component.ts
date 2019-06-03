@@ -21,4 +21,8 @@ export class NavComponent implements OnInit {
   setActiveTab = (tab) => {
     this.activeTab = tab.id;
   };
+
+  trackById = (index, tab) => {
+    return tab.id;
+  };
 }

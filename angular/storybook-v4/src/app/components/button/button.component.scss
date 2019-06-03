@@ -25,9 +25,13 @@
   padding: 10px 13px;
 }
 
-.c-button__icon {
+.c-button__icon-container {
   height: 25px;
   margin-left: 50px;
+}
+
+.c-button__icon {
+  height: 25px;
 }
 
 .c-button:active {
@@ -55,10 +59,7 @@
 .c-button {
   background-color: $color-primary;
   color: $color-white;
-
-  #icon-chevron-right {
-    fill: $color-white;
-  }
+  fill: $color-white;
 }
 
 .c-button__disabled {
@@ -67,8 +68,5 @@
   color: $color-gray;
   box-shadow: none !important;
   border: none !important;
-
-  #icon-chevron-right {
-    fill: $color-gray;
-  }
+  fill: $color-gray;
 }

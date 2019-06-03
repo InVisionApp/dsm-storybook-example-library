@@ -6,12 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./toast.component.scss']
 })
 export class ToastComponent {
-  iconsByStatus = {
-    default: 'flag',
-    warning: 'warn',
-    error: 'close-circle',
-    info: 'info-circle',
-    success: 'check-circle'
+  icons = {
+    default: 'flagIcon',
+    warning: 'warnIcon',
+    success: 'checkmarkIcon',
+    error: 'errorIcon',
+    info: 'infoIcon'
   };
 
   @Input()

@@ -1,7 +1,7 @@
-<div  [ngClass]="['c-toast', status]">
-  <svg-icon [applyCss]="true" [src]="'icons/' + iconsByStatus[status] +'.svg'"></svg-icon>
-  <span class="c-toast__text">{{text}}</span>
-  <div class="c-toast__close-icon">
-    <svg-icon [applyCss]="true" [src]="'icons/close.svg'"></svg-icon>
-  </div>
+<div [class]="'c-toast '+ status">
+  <app-icons [icon]="icons[status]" [ngClass]="'c-toast__icon--' + status"></app-icons>
+  <span class="c-toast__text">
+    {{text}}
+  </span>
+  <app-icons icon="closeIcon" class="c-toast__close-icon"></app-icons>
 </div>

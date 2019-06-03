@@ -62,19 +62,30 @@
   height: 24px;
 }
 
-.c-toast__icon.default {
-  path {
-    fill: $color-gray;
-  }
+.c-toast__icon--default {
+  fill: $color-gray;
+}
+
+.c-toast__icon--warning {
+  fill: $color-warning;
+}
+
+.c-toast__icon--success {
+  fill: $color-success;
+}
+
+.c-toast__icon--error {
+  fill: $color-error;
+}
+
+.c-toast__icon--info {
+  fill: $color-info;
 }
 
 .c-toast__close-icon {
   cursor: pointer;
   transition: fill 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
-
-  #close-icon {
-    fill: $color-gray;
-  }
+  fill: $color-gray;
 }
 
 .c-toast__icon.close:hover {
