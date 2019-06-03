@@ -41,6 +41,7 @@
     "@storybook/addon-knobs": "4.1.18",
     "@storybook/addon-options": "4.1.18",
     "@storybook/addon-a11y": "4.2.0-alpha.11",
+    "@storybook/addon-centered": "4.1.18",
     "@storybook/addons": "4.1.18",
     "@storybook/angular": "4.1.18",
     "@types/jasmine": "~3.3.8",

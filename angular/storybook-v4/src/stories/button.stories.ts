@@ -18,13 +18,13 @@ storiesOf('Button', module)
     'Button Component',
     () => ({
       template:
-        '<button-component [onClick]="onClickProp" [text]="textKnob" [icon]="iconKnob" [disabled]="disabledKnob"></button-component>',
+        '<button-component [action]="actionProp" [text]="textKnob" [icon]="iconKnob" [disabled]="disabledKnob"></button-component>',
       component: ButtonComponent,
       props: {
         textKnob: text('text', 'TEXT'),
         iconKnob: select('icon', ['none', 'chevron-right'], 'none'),
         disabledKnob: boolean('disabled', false),
-        onClickProp: action('Button clicked')
+        actionProp: action('Button clicked')
       }
     }),
     { 'in-dsm': { id: '5c862a4b73b2a500b5c66f9b' } }
