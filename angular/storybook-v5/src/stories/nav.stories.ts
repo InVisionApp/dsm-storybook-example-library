@@ -27,11 +27,10 @@ storiesOf('Nav', module)
 
       return {
         template: '<nav-component [initialActiveTab]="\'1\'" [tabs]="tabsKnob"></nav-component>',
-        component: NavComponent,
         props: {
           tabsKnob: object('tabs', tabs)
         }
       };
     },
-    { 'in-dsm': { id: '5c862a4b73b2a500b5c66f9b' } }
+    { 'in-dsm': { id: '5c862a4b73b2a500b5c66f9b', componentPath: '../app/components/nav/nav.component' } }
   );
