@@ -1,5 +1,8 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
+/**
+ * Buttons indicate actions on the page.
+ * */
 @Component({
   selector: 'button-component',
   templateUrl: './button.component.html',
@@ -10,15 +13,27 @@ export class ButtonComponent {
     'chevron-right': 'chevronRightIcon'
   };
 
+  /**
+   * The content of the Button
+   * */
   @Input()
   text: string = '';
 
+  /**
+   * Disable state of the button
+   * */
   @Input()
   disabled: boolean = false;
 
+  /**
+   * Adds an icon to the button
+   */
   @Input()
   icon: 'none' | 'chevron-right' = 'none';
 
+  /**
+   * The function to be called when the button is clicked
+   */
   @Output()
   didClick = new EventEmitter<void>();
 

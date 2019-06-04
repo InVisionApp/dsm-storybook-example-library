@@ -26,5 +26,5 @@ storiesOf('Button', module)
         actionProp: action('Button clicked')
       }
     }),
-    { 'in-dsm': { id: '5c862a4b73b2a500b5c66f9b', componentPath: '../app/components/button/button.component' } }
+    { 'in-dsm': { id: '5c862a4b73b2a500b5c66f9b', version: '1.0.0', componentPath: '../app/components/button/button.component' } }
   );
