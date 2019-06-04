@@ -11,7 +11,8 @@ function loadStories() {
 }
 
 /**
- * To override DSM-Storybook custom options\theme you can use Storybook options addon
+ * To override @invisionapp/dsm-storybook custom options\theme you can use Storybook options addon
+ * -- this will override all of @invisionapp/dsm-storybook options\themes --
  * link: https://github.com/storybooks/storybook/tree/release/4.x/addons/options
  * Example code below
  **/
