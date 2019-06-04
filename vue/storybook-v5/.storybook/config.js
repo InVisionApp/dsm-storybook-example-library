@@ -23,7 +23,7 @@ function loadStories() {
 // }
 
 addParameters({
-  backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }, { name: 'white', value: '#333' }]
+  backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }, { name: 'dark', value: '#333' }]
 });
 
 addDecorator(withA11y);
