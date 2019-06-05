@@ -11,7 +11,7 @@
   "dependencies": {
     "@emotion/core": "10.0.9",
     "@emotion/styled": "10.0.9",
-    "@invisionapp/dsm-storybook": "0.0.52",
+    "@invisionapp/dsm-storybook": "0.0.56",
     "core-js": "^3.0.1",
     "vue": "^2.6.6"
   },

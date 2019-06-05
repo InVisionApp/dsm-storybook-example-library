@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@invisionapp/dsm-storybook": "0.0.52",
+    "@invisionapp/dsm-storybook": "0.0.56",
     "@storybook/addon-actions": "5.1.0-rc.4",
     "@storybook/addon-a11y": "5.1.0-rc.4",
     "@storybook/addon-centered": "5.1.0-rc.4",
