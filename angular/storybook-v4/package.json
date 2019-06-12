@@ -23,7 +23,7 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
-    "@invisionapp/dsm-storybook": "0.0.56",
+    "@invisionapp/dsm-storybook": "0.0.62",
     "angular-svg-icon": "7.2.1",
     "core-js": "3.0.1",
     "node-sass": "^4.12.0",

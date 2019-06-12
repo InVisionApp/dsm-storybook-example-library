@@ -6,6 +6,9 @@ import Toast from '../components/Toast';
 
 storiesOf('Toast', module)
   .addDecorator(withKnobs)
+  .addParameters({
+    backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }]
+  })
   .add(
     'Toast',
     () => {
