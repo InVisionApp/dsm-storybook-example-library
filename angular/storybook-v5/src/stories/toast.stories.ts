@@ -13,6 +13,9 @@ storiesOf('Toast', module)
       imports: [HttpClientModule, AngularSvgIconModule]
     })
   )
+  .addParameters({
+    backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }]
+  })
   .add(
     'Toast Component',
     () => {
