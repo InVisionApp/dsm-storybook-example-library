@@ -23,8 +23,14 @@ storiesOf('Button', module)
         textKnob: text('text', 'TEXT'),
         iconKnob: select('icon', ['none', 'chevron-right'], 'none'),
         disabledKnob: boolean('disabled', false),
-        actionProp: action('Button clicked')
+        actionProp: () => action('Button clicked')('Click')
       }
     }),
-    { 'in-dsm': { id: '5c862a4b73b2a500b5c66f9b', versionFilePath: '../app/components/button/versionFile.json', componentPath: '../app/components/button/button.component' } }
+    {
+      'in-dsm': {
+        id: '5cf53658fbb8682a3246d907',
+        versionFilePath: '../app/components/button/versionFile.json',
+        componentPath: '../app/components/button/button.component'
+      }
+    }
   );

@@ -14,7 +14,7 @@ storiesOf('Button', module)
 
       return (
         <Button
-          onClick={action('Button clicked')}
+          onClick={() => action('Button clicked')('Click')}
           icon={select('icon', iconOptions, iconOptions.none)}
           disabled={boolean('disabled', false)}
         >
@@ -23,6 +23,6 @@ storiesOf('Button', module)
       );
     },
     {
-      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', versionFilePath: '../components/versionFile.json' }
+      'in-dsm': { id: '5cf5371e4ffc3ff59fd5ee1a', versionFilePath: '../components/versionFile.json' }
     }
   );
