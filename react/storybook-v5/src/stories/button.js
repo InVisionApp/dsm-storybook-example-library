@@ -23,6 +23,6 @@ storiesOf('Button', module)
       );
     },
     {
-      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', version: '1.0.0' }
+      'in-dsm': { id: '5c4eb8659b3358003a8b60ff', versionFilePath: '../components/versionFile.json' }
     }
   );
