@@ -1,0 +1,36 @@
+{
+  "description": "Toasts provide dismissable feedback\\information for the user.",
+  "displayName": "Toast",
+  "props": [
+    {
+      "value": "dsm-toast",
+      "description": "Base class to define a toast",
+      "required": true
+    },
+    {
+      "value": "default",
+      "description": "Default toast"
+    },
+    {
+      "value": "success",
+      "description": "Success toast"
+    },
+    {
+      "value": "warning",
+      "description": "Warning toast"
+    },
+    {
+      "value": "error",
+      "description": "Error toast"
+    },
+    {
+      "value": "info",
+      "description": "Info toast"
+    },
+    {
+      "value": "dsm-toast__text",
+      "description": "The toast content container",
+      "required": true
+    }
+  ]
+}
