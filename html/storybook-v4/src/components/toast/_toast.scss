@@ -1,0 +1,91 @@
+@import '../variables';
+
+$color-default: $color-gray-light;
+$color-warning: rgba(255, 165, 97, 0.9);
+$color-info: #a2ceff;
+$color-success: #48a651;
+$color-error: rgba(242, 79, 99, 0.9);
+
+@keyframes fadeFromTop {
+  0% {
+    bottom: 200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.dsm-toast {
+  display: flex;
+  align-items: center;
+  min-width: 667px;
+  max-width: 100%;
+  min-height: 30px;
+  padding: 8px;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+  position: relative;
+  animation: fadeFromTop 2s 1;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+
+  // Default
+  background-color: $color-white;
+  border-top: $color-default 6px solid;
+  svg {
+    fill: $color-gray;
+  }
+
+  &.warning {
+    background-color: rgba(255, 165, 97, 0.1);
+    border-top: $color-warning 6px solid;
+    svg {
+      fill: $color-warning;
+    }
+  }
+
+  &.info {
+    background-color: rgba(162, 206, 255, 0.25);
+    border-top: $color-info 6px solid;
+    svg {
+      fill: $color-info;
+    }
+  }
+
+  &.success {
+    background-color: rgba(72, 166, 81, 0.15);
+    border-top: $color-success 6px solid;
+    svg {
+      fill: $color-success;
+    }
+  }
+
+  &.error {
+    background-color: rgba(242, 79, 99, 0.15);
+    border-top: $color-error 6px solid;
+    svg {
+      fill: $color-error;
+    }
+  }
+
+  .dsm-toast__text {
+    width: 100%;
+    margin: 0 8px 0 8px;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .dsm-toast__close-icon {
+    cursor: pointer;
+
+    svg {
+      fill: $color-gray;
+    }
+  }
+}
