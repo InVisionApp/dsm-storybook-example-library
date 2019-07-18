@@ -8,6 +8,11 @@
       "required": true
     },
     {
+      "value": "dsm-nav__tab",
+      "description": "The tab container",
+      "required": true
+    },
+    {
       "value": "dsm-nav__tab-content",
       "description": "The tab content container",
       "required": true

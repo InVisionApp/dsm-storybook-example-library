@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/html';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { pickTarget } from './actionPickTarget';
+import { withActions } from '@storybook/addon-actions';
 import '../components/nav/_nav.scss';
 
 const navWrapper = (storyFn) => `<div style="background-color:white;padding: 25px">${storyFn()}</div>`;
@@ -16,25 +16,25 @@ storiesOf('Nav', module)
       const tab3 = text('tab 3', 'three');
 
       $(document).ready(() => {
-        $('.dsm-nav li').on('click', function(event) {
+        $('.dsm-nav__tab').on('click', function(event) {
           $('.dsm-nav__tab-content').removeClass('dsm-nav__tab--active');
           const target = $(event.target);
           target.addClass('dsm-nav__tab--active');
         });
       });
 
-      return pickTarget.withActions({ 'click .dsm-nav li': 'Tab clicked!' })(
+      return withActions({ 'click .dsm-nav__tab': 'Tab clicked!' })(
         () =>
           `
 <div class="dsm-container">
     <ul class="dsm-nav">
-        <li>
+        <li class="dsm-nav__tab">
             <div class="dsm-nav__tab-content dsm-nav__tab--active">${tab1}</div>
         </li>
-        <li>
+        <li class="dsm-nav__tab">
             <div class="dsm-nav__tab-content">${tab2}</div>
         </li>
-        <li>
+        <li class="dsm-nav__tab">
             <div class="dsm-nav__tab-content">${tab3}</div>
         </li>
       </ul>

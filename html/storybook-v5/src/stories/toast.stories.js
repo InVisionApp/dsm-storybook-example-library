@@ -25,9 +25,9 @@ storiesOf('Toast', module)
 
       return `
 <div class="dsm-container">
-    <div class="dsm-toast ${status}">
+    <div class="dsm-toast${status !== statusOptions.default ? ` dsm-toast--${status}` : ''}">
       ${toastIcons[status]}
-      <span class="dsm-toast__text">${toastText}</span>
+      <span class="dsm-toast__content">${toastText}</span>
       <div class="dsm-toast__close-icon">${closeIcon}</div>
     </div>
 </div>`;

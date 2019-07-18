@@ -29,7 +29,7 @@
     font-weight: bold;
   }
 
-  &.dsm-btn__with-icon {
+  &.dsm-btn--with-icon {
     padding: 10px 13px;
   }
 
@@ -37,10 +37,10 @@
     border: 1px solid rgba(72, 107, 255, 0.2);
     box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
 
-    &:not(.dsm-btn__disabled) {
+    &:not(:disabled) {
       padding: 9px 39px;
 
-      &.dsm-btn__with-icon {
+      &.dsm-btn--with-icon {
         padding: 9px 12px;
       }
     }

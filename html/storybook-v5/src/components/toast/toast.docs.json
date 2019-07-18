@@ -4,32 +4,33 @@
   "props": [
     {
       "value": "dsm-toast",
-      "description": "Base class to define a toast",
+      "description": "Base class to define a toast (default Toast)",
       "required": true
     },
     {
-      "value": "default",
-      "description": "Default toast"
+      "value": "dsm-toast--success",
+      "description": "Changes the visual display of the toast to success"
     },
     {
-      "value": "success",
-      "description": "Success toast"
+      "value": "dsm-toast--warning",
+      "description": "Changes the visual display of the toast to warning"
     },
     {
-      "value": "warning",
-      "description": "Warning toast"
+      "value": "dsm-toast--error",
+      "description": "Changes the visual display of the toast to error"
     },
     {
-      "value": "error",
-      "description": "Error toast"
+      "value": "dsm-toast--info",
+      "description": "Changes the visual display of the toast to info"
     },
     {
-      "value": "info",
-      "description": "Info toast"
-    },
-    {
-      "value": "dsm-toast__text",
+      "value": "dsm-toast__content",
       "description": "The toast content container",
+      "required": true
+    },
+    {
+      "value": "dsm-toast__close-icon",
+      "description": "The toast close icon container",
       "required": true
     }
   ]
