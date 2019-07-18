@@ -1,8 +1,10 @@
 import { storiesOf } from '@storybook/html';
 import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
-import { withActions } from '@storybook/addon-actions';
+import { decorate } from '@storybook/addon-actions';
 import { chevronRightIcon } from '../components/utils/icons';
 import '../components/button/_button.scss';
+
+const decoratedAction = decorate([() => ['Click']]);
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -22,7 +24,7 @@ storiesOf('Button', module)
       const disabled = boolean('disabled', false);
       const children = text('text', 'TEXT');
 
-      return withActions({ 'click .dsm-btn': 'Button clicked!' })(
+      return decoratedAction.withActions({ 'click .dsm-btn': 'Button clicked!' })(
         () => `
 <div class="dsm-container">
     <button class="dsm-btn${icon !== availableIcons.none ? ' dsm-btn--with-icon' : ''}" ${disabled ? 'disabled' : ''}>

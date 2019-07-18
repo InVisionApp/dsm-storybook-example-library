@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/html';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { withActions } from '@storybook/addon-actions';
 import '../components/nav/_nav.scss';
 
 const navWrapper = (storyFn) => `<div style="background-color:white;padding: 25px">${storyFn()}</div>`;
@@ -23,9 +22,7 @@ storiesOf('Nav', module)
         });
       });
 
-      return withActions({ 'click .dsm-nav__tab': 'Tab clicked!' })(
-        () =>
-          `
+      return `
 <div class="dsm-container">
     <ul class="dsm-nav">
         <li class="dsm-nav__tab">
@@ -38,8 +35,7 @@ storiesOf('Nav', module)
             <div class="dsm-nav__tab-content">${tab3}</div>
         </li>
       </ul>
-</div>`
-      );
+</div>`;
     },
     {
       'in-dsm': {
