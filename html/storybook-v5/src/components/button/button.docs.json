@@ -1,0 +1,24 @@
+{
+  "description": "Buttons indicate actions on the page.",
+  "displayName": "Button",
+  "props": [
+    {
+      "value": "dsm-btn",
+      "description": "Base class to define a button",
+      "required": true
+    },
+    {
+      "value": "dsm-btn--with-icon",
+      "description": "Required when the button is with an icon"
+    },
+    {
+      "value": "dsm-btn__content",
+      "description": "The content of the button"
+    },
+    {
+      "value": "disabled",
+      "description": "Disabled attribute to disable the button",
+      "required": false
+    }
+  ]
+}

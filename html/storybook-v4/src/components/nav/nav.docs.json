@@ -1,0 +1,25 @@
+{
+  "description": "The Nav is used for site navigation.",
+  "displayName": "Nav",
+  "props": [
+    {
+      "value": "dsm-nav",
+      "description": "Base class to define a navigation bar",
+      "required": true
+    },
+    {
+      "value": "dsm-nav__tab",
+      "description": "The tab container",
+      "required": true
+    },
+    {
+      "value": "dsm-nav__tab-content",
+      "description": "The tab content container",
+      "required": true
+    },
+    {
+      "value": "dsm-nav__tab--active",
+      "description": "Indicates the current active tab"
+    }
+  ]
+}

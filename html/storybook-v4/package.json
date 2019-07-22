@@ -1,0 +1,31 @@
+{
+  "name": "storybook-v4",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "dsm-storybook:publish": "dsm-storybook publish",
+    "dsm-storybook:preview": "dsm-storybook preview"
+  },
+  "dependencies": {
+    "@invisionapp/dsm-storybook": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@storybook/addon-a11y": "4.2.0-alpha.11",
+    "@storybook/addon-actions": "4.1.18",
+    "@storybook/addon-backgrounds": "4.1.18",
+    "@storybook/addon-centered": "4.1.18",
+    "@storybook/addon-knobs": "4.1.18",
+    "@storybook/addon-options": "4.1.18",
+    "@storybook/addons": "4.1.18",
+    "@storybook/html": "4.1.18",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "svg-inline-loader": "^0.8.0"
+  }
+}
