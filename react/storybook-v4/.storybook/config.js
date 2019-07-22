@@ -4,8 +4,9 @@ import centered from '@storybook/addon-centered';
 import { withBackgrounds } from '@storybook/addon-backgrounds';
 import { initDsm } from '@invisionapp/dsm-storybook';
 
+const req = require.context('../src/stories', true, /\.stories\.js$/);
 function loadStories() {
-  require('../src/stories');
+  req.keys().forEach((filename) => req(filename));
 }
 
 /**

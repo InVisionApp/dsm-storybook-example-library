@@ -12,7 +12,6 @@
     "@emotion/core": "10.0.9",
     "@emotion/styled": "10.0.9",
     "@invisionapp/dsm-storybook": "latest",
-    "core-js": "^3.0.1",
     "vue": "^2.6.6"
   },
   "devDependencies": {

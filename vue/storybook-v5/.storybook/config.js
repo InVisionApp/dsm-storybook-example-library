@@ -3,8 +3,9 @@ import { withA11y } from '@storybook/addon-a11y';
 import centered from '@storybook/addon-centered/vue';
 import { initDsm } from '@invisionapp/dsm-storybook';
 
+const req = require.context('../src/stories', true, /\.stories\.js$/);
 function loadStories() {
-  require('../src/stories');
+  req.keys().forEach((filename) => req(filename));
 }
 
 /**
