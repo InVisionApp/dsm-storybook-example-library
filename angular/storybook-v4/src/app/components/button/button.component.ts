@@ -1,12 +1,19 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
 
 /**
  * Buttons indicate actions on the page.
  * */
 @Component({
-  selector: 'button-component',
+  selector: 'button[dsm-button]',
+  host: {
+    class: 'c-button',
+    '[class.disabled]': 'disabled',
+    '[class.with-icon]': "(icon !== 'none')",
+    '(click)': '!disabled && action()'
+  },
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  styleUrls: ['./button.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ButtonComponent {
   icons = {

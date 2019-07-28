@@ -1,6 +1,6 @@
 <ul class="c-nav">
   <li *ngFor="let tab of tabs; trackBy: trackById" class="tab" (click)="setActiveTab(tab)">
-    <div [ngClass]="{'tab-content': true, 'active': activeTab === tab.id }">
+    <div class="tab-content" [ngClass]="{'active': activeTab === tab.id }">
       {{tab.title}}
     </div>
   </li>

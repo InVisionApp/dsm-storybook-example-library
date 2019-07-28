@@ -18,7 +18,7 @@ storiesOf('Button', module)
     'Button Component',
     () => ({
       template:
-        '<button-component (didClick)="actionProp()" [text]="textKnob" [icon]="iconKnob" [disabled]="disabledKnob"></button-component>',
+        '<button dsm-button (didClick)="actionProp()" [text]="textKnob" [icon]="iconKnob" [disabled]="disabledKnob"></button>',
       props: {
         textKnob: text('text', 'TEXT'),
         iconKnob: select('icon', ['none', 'chevron-right'], 'none'),
