@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { object, withKnobs } from '@storybook/addon-knobs';
 
-import Nav from '../components/Nav';
+import Nav from './Nav';
 
 const navWrapper = (storyFn) => <div style={{ backgroundColor: 'white', padding: 25 }}>{storyFn()}</div>;
 

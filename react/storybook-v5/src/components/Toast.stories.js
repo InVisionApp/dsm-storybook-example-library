@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text, withKnobs } from '@storybook/addon-knobs';
 
-import Toast from '../components/Toast';
+import Toast from './Toast';
 
 storiesOf('Toast', module)
   .addDecorator(withKnobs)
