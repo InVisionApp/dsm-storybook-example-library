@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
-import Toast from '../components/Toast.vue';
+import Toast from './Toast.vue';
 
 storiesOf('Toast', module)
   .addDecorator(withKnobs)

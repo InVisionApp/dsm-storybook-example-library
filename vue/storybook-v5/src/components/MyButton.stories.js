@@ -1,6 +1,6 @@
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import MyButton from '../components/MyButton.vue';
+import MyButton from './MyButton.vue';
 
 export default {
   title: 'Button',
