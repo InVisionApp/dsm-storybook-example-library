@@ -4,6 +4,8 @@ import { chevronRightIcon } from '../components/utils/icons';
 import '../components/button/_button.scss';
 import buttonDocs from '../components/button/button.mdx';
 
+// This story is written in "Component Story Format" that was introduced in Storybook 5.2
+// https://storybook.js.org/docs/formats/component-story-format/
 export default {
   title: 'Button',
   parameters: {
@@ -42,6 +44,8 @@ export const simpleButton = () => {
 
 simpleButton.story = {
   parameters: {
+    // Story-Level 'in-dsm' configuration (Will apply only to the story that is being configured)
+    // Story-Level configuration will override Module-Level 'in-dsm' configuration for the specific story
     'in-dsm': {
       docFilePath: '../components/button/button.docs.json',
       containerClass: 'dsm-container'

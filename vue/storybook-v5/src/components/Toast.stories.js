@@ -22,6 +22,6 @@ storiesOf('Toast', module)
       };
     },
     {
-      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: '../components/Toast.vue' }
+      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: './Toast.vue' }
     }
   );
