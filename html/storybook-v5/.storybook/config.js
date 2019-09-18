@@ -33,6 +33,6 @@ initDsm({
   callback: () => {
     // apply the custom options
     // setCustomOptions();
-    configure(require.context('../src/stories', true, /\.stories\.(js|mdx)$/), module);
+    configure(require.context('../src/stories', true, /\.stories\.js$/), module);
   }
 });

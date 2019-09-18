@@ -69,3 +69,4 @@ codeship.aes
 **/dist-dsm-storybook
 **/.dsm
 
+package-lock.json

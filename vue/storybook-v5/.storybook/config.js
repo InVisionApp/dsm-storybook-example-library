@@ -22,7 +22,6 @@ addParameters({
   backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }, { name: 'dark', value: '#333' }]
 });
 
-addParameters({ docs: { page: null } });
 addDecorator(withA11y);
 addDecorator(centered);
 
@@ -33,6 +32,6 @@ initDsm({
   callback: () => {
     // apply the custom options
     // setCustomOptions();
-    configure(require.context('../src', true, /\.stories\.(js|mdx)$/), module);
+    configure(require.context('../src', true, /\.stories\.js$/), module);
   }
 });
