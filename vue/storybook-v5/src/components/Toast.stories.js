@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
-import Toast from '../components/Toast.vue';
+import Toast from './Toast.vue';
 
 storiesOf('Toast', module)
   .addDecorator(withKnobs)
@@ -22,6 +22,6 @@ storiesOf('Toast', module)
       };
     },
     {
-      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: '../components/Toast.vue' }
+      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: './Toast.vue' }
     }
   );

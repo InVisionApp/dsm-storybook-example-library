@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
-import Button from '../components/Button';
+import Button from './Button';
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -23,6 +23,6 @@ storiesOf('Button', module)
       );
     },
     {
-      'in-dsm': { id: '5cf53658fbb8682a3246d907', versionFilePath: '../components/versionFile.json' }
+      'in-dsm': { id: '5cf5371e4ffc3ff59fd5ee1a', versionFilePath: '../components/versionFile.json' }
     }
   );

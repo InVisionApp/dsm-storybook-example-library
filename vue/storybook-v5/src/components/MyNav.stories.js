@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue';
-import { withKnobs, object, text } from '@storybook/addon-knobs';
-import MyNav from '../components/MyNav.vue';
+import { withKnobs, object } from '@storybook/addon-knobs';
+import MyNav from './MyNav.vue';
 
 storiesOf('Nav', module)
   .addDecorator(withKnobs)
@@ -24,6 +24,6 @@ storiesOf('Nav', module)
       };
     },
     {
-      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: '../components/MyNav.vue' }
+      'in-dsm': { id: '5c4ec4489b3358003a8b612e', componentPath: './MyNav.vue' }
     }
   );
