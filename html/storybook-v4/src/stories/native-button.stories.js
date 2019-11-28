@@ -1,9 +1,9 @@
 import { storiesOf } from '@storybook/html';
 import { decorate } from '@storybook/addon-actions';
 import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
-import { nativeButton } from '../components/nativeButton/nativeButton';
+import { NativeButton } from '../components/native-button/native-button';
 
-customElements.define('dsm-button', nativeButton);
+customElements.define('dsm-button', NativeButton);
 const decoratedAction = decorate([() => ['Click']]);
 
 storiesOf('Native Component Button', module)
