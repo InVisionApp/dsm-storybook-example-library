@@ -19,7 +19,10 @@ import { initDsm } from '@invisionapp/dsm-storybook';
 // }
 
 addParameters({
-  backgrounds: [{ name: 'DSM background', value: '#f8f8fa', default: true }, { name: 'dark', value: '#333' }]
+  backgrounds: [
+    { name: 'DSM background', value: '#f8f8fa', default: true },
+    { name: 'dark', value: '#333' }
+  ]
 });
 
 addParameters({ docs: { page: null } });
@@ -33,6 +36,6 @@ initDsm({
   callback: () => {
     // apply the custom options
     // setCustomOptions();
-    configure(require.context('../src', true, /\.stories\.js$/), module);
+    configure(require.context('../src', true, /\.stories\.js$/), module); // Will we still need this in 5.3 config?
   }
 });
