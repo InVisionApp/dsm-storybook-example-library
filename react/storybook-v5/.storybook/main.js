@@ -1,4 +1,3 @@
-// main.js
 module.exports = {
   stories: ['../**/*.stories.js'],
   addons: [
@@ -9,10 +8,10 @@ module.exports = {
         configureJSX: true
       }
     },
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-actions/register',
-    '@storybook/addon-a11y/register',
-    '@storybook/addon-backgrounds/register',
-    '@invisionapp/dsm-storybook/register'
+    '@storybook/addon-knobs',
+    '@storybook/addon-actions',
+    '@storybook/addon-a11y',
+    '@storybook/addon-backgrounds',
+    '@invisionapp/dsm-storybook'
   ]
 };
