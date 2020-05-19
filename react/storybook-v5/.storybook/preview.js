@@ -36,6 +36,6 @@ initDsm({
   callback: () => {
     // apply the custom options
     // setCustomOptions();
-    configure(require.context('../src', true, /\.stories\.js$/), module); // Will we still need this in 5.3 config?
+    configure(require.context('../src', true, /\.stories\.js$/), module);
   }
 });
