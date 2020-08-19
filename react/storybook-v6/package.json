@@ -1,0 +1,56 @@
+{
+  "name": "storybook-v6",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@invisionapp/dsm-storybook": "latest",
+    "@storybook/addon-options": "^5.3.19",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "link-dsm": "yalc add @invisionapp/dsm-storybook && chmod +x ./node_modules/.bin/dsm-storybook",
+    "remove-dsm": "yalc remove @invisionapp/dsm-storybook",
+    "dsm-storybook:publish": "dsm-storybook publish",
+    "dsm-storybook:preview": "dsm-storybook preview"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-actions": "^6.0.0",
+    "@storybook/addon-essentials": "^6.0.0",
+    "@storybook/addon-links": "^6.0.0",
+    "@storybook/addons": "^6.0.0",
+    "@storybook/node-logger": "^6.0.0",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.0",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1",
+    "yalc": "1.0.0-pre.27"
+  }
+}
