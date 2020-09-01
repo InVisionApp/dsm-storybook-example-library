@@ -26,9 +26,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "dsm-storybook:publish": "dsm-storybook publish",
-    "dsm-storybook:preview": "dsm-storybook preview",
-    "link-dsm": "yalc add @invisionapp/dsm-storybook && chmod +x ./node_modules/.bin/dsm-storybook",
-    "remove-dsm": "yalc remove @invisionapp/dsm-storybook"
+    "dsm-storybook:preview": "dsm-storybook preview"
   },
   "browserslist": [
     ">0.2%",
@@ -44,7 +42,6 @@
     "precss": "^4.0.0",
     "raw-loader": "1.0.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "yalc": "1.0.0-pre.27"
+    "style-loader": "^0.23.1"
   }
 }
