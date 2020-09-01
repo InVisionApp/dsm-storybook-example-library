@@ -1,5 +1,5 @@
 import { addons } from '@storybook/addons';
-import { getDefaultDsmOptions, getDefaultDsmTheme } from '@invisionapp/dsm-storybook';
+import { getDsmOptions, getDsmTheme } from '@invisionapp/dsm-storybook';
 
 /**
  * To override @invisionapp/dsm-storybook custom options/theme you can use Storybook options parameter and theming
@@ -9,18 +9,18 @@ import { getDefaultDsmOptions, getDefaultDsmTheme } from '@invisionapp/dsm-story
  * Example code below
  **/
 //  addons.setConfig({
-//    ...getDefaultDsmOptions(process.env.STORYBOOK_DSM),
+//    ...getDsmOptions(process.env.STORYBOOK_DSM),
 //    showNav: true,
 //    theme: {
-//      ...getDefaultDsmTheme(process.env.STORYBOOK_DSM),
+//      ...getDsmTheme(process.env.STORYBOOK_DSM),
 //      fontBase: "'Open Sans'",
 //      colorPrimary: "#123456"
 //    }
 //  });
 
 addons.setConfig({
-  ...getDefaultDsmOptions(process.env.STORYBOOK_DSM),
+  ...getDsmOptions(process.env.STORYBOOK_DSM),
   theme: {
-    ...getDefaultDsmTheme(process.env.STORYBOOK_DSM)
+    ...getDsmTheme(process.env.STORYBOOK_DSM)
   }
 });
