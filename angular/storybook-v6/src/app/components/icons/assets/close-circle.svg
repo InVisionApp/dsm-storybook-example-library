@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/Close Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.2723005,15.9342723 L13.8380282,12.5 L17.2723005,9.0657277 L15.9342723,7.72769953 L12.5,11.1619718 L9.0657277,7.72769953 L7.72769953,9.0657277 L11.1619718,12.5 L7.72769953,15.9342723 L9.0657277,17.2723005 L12.5,13.8380282 L15.9342723,17.2723005 L17.2723005,15.9342723 Z M5.76525822,5.80985915 C7.63850702,3.93661035 9.8833985,3 12.5,3 C15.1166015,3 17.3540596,3.92917694 19.2124413,5.78755869 C21.0708231,7.64594043 22,9.8833985 22,12.5 C22,15.1166015 21.0708231,17.3540596 19.2124413,19.2124413 C17.3540596,21.0708231 15.1166015,22 12.5,22 C9.8833985,22 7.64594043,21.0708231 5.78755869,19.2124413 C3.92917694,17.3540596 3,15.1166015 3,12.5 C3,9.8833985 3.92174352,7.65337385 5.76525822,5.80985915 Z" id="close-circle-path"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Close">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#close-circle-path"></use>
+            </mask>
+            <use id="close-circle-icon" fill-opacity="0.9" fill="#F24F63" fill-rule="nonzero" xlink:href="#close-circle-path"></use>
+        </g>
+    </g>
+</svg>
