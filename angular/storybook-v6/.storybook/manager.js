@@ -19,9 +19,7 @@ import { getDsmOptions, getDsmTheme } from '@invisionapp/dsm-storybook';
 //  });
 
 addons.setConfig({
-  ...getDsmOptions(process.env.STORYBOOK_DSM),
+  ...getDsmOptions(process.env.STORYBOOK_DSM)
   // Using the DSM theme is optional
-  theme: {
-    ...getDsmTheme(process.env.STORYBOOK_DSM)
-  }
+  // ...getDsmTheme(process.env.STORYBOOK_DSM)
 });
