@@ -1,7 +1,7 @@
 {
-  "authToken": "BkPU3VJ-v",
-  "dsmHost": "in-v7.local.invision.works",
-  "organization": "in-vision",
+  "authToken": "<authentication token>",
+  "dsmHost": "projects.invisionapp.com",
+  "organization": "<organization>",
   "outputDir": ".dsm",
   "storyPath": "src/**/*.stories.js"
 }
