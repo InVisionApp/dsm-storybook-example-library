@@ -11,11 +11,7 @@ import { getDsmOptions, getDsmTheme } from '@invisionapp/dsm-storybook';
 //  addons.setConfig({
 //    ...getDsmOptions(process.env.STORYBOOK_DSM),
 //    showNav: true,
-//    theme: {
-//      ...getDsmTheme(process.env.STORYBOOK_DSM),
-//      fontBase: "'Open Sans'",
-//      colorPrimary: "#123456"
-//    }
+//    ...getDsmTheme(process.env.STORYBOOK_DSM)
 //  });
 
 addons.setConfig({
