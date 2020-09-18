@@ -11,8 +11,6 @@ export default {
   }
 };
 
-// const Template = (args) => <Page {...args} />;
-
 export const LoggedIn = (args) => <Page {...args} />;
 LoggedIn.args = {
   ...HeaderStories.LoggedIn.args

@@ -13,12 +13,10 @@ export default {
   }
 };
 
-// const Template = (args) => <Button {...args} />;
-
 export const Primary = (args) => <Button {...args} />;
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: 'Button'
 };
 
 export const Secondary = (args) => <Button {...args} />;

@@ -10,8 +10,6 @@ export default {
   }
 };
 
-// const Template = (args) => <Header {...args} />;
-
 export const LoggedIn = (args) => <Header {...args} />;
 LoggedIn.args = {
   user: {}
