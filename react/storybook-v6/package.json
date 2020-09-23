@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@invisionapp/dsm-storybook": "latest",
-    "@storybook/addon-actions": "^6.0.0",
     "@storybook/addon-essentials": "^6.0.0",
     "@storybook/addon-knobs": "^6.0.21",
     "@storybook/addon-links": "^6.0.0",

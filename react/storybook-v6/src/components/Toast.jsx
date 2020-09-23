@@ -12,7 +12,7 @@ import './_toast.scss';
 const Toast = ({ text, status }) => {
   return (
     <div key={status} className={`c-toast ${status}`}>
-      <ReactSVG className={`c-toast__icon ${status}`} src={toastIcons.default} />
+      <ReactSVG className={`c-toast__icon ${status}`} src={toastIcons[status]} />
       <span className="c-toast__text">{text}</span>
       <CloseIcon className="c-toast__close-icon" />
     </div>
