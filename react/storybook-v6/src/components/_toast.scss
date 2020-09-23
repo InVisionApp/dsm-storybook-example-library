@@ -1,0 +1,82 @@
+@import './variables';
+
+@keyframes fadeFromTop {
+  0% {
+    bottom: 200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.c-toast {
+  display: flex;
+  align-items: center;
+  min-width: 667px;
+  max-width: 100%;
+  min-height: 30px;
+  padding: 8px;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+  position: relative;
+  animation: fadeFromTop 2s 1;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.c-toast.default {
+  background-color: $color-white;
+  border-top: $color-gray-light 6px solid;
+}
+
+.c-toast.warning {
+  background-color: rgba(255, 165, 97, 0.1);
+  border-top: rgba(255, 165, 97, 0.9) 6px solid;
+}
+
+.c-toast.info {
+  background-color: rgba(162, 206, 255, 0.25);
+  border-top: #a2ceff 6px solid;
+}
+
+.c-toast.success {
+  background-color: rgba(72, 166, 81, 0.15);
+  border-top: #48a651 6px solid;
+}
+
+.c-toast.error {
+  background-color: rgba(242, 79, 99, 0.15);
+  border-top: rgba(242, 79, 99, 0.9) 6px solid;
+}
+
+.c-toast__text {
+  width: 100%;
+  margin: 0 8px 0 8px;
+}
+
+.c-toast__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.c-toast__icon.default {
+  path {
+    fill: $color-gray;
+  }
+}
+
+.c-toast__close-icon {
+  cursor: pointer;
+  transition: fill 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
+
+  #close-icon {
+    fill: $color-gray;
+  }
+}
+
+.c-toast__icon.close:hover {
+  cursor: pointer;
+}

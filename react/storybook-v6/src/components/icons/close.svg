@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="close-path" points="19.96875 7.40625 14.390625 12.984375 19.96875 18.5625 18.5625 19.96875 12.984375 14.390625 7.40625 19.96875 6 18.5625 11.578125 12.984375 6 7.40625 7.40625 6 12.984375 11.578125 18.5625 6"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Close">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#close-path"></use>
+            </mask>
+            <use id="close-icon" fill="#9E9E9E" fill-rule="nonzero" xlink:href="#close-path"></use>
+        </g>
+    </g>
+</svg>
