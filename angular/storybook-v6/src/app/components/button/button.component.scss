@@ -1,0 +1,72 @@
+@import '../variables';
+
+.c-button {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  border-radius: $border-radius;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s, width 0.2s, box-shadow 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
+}
+
+.content {
+  font-family: $font-family;
+  letter-spacing: 1.08px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.with-icon {
+  padding: 10px 13px;
+}
+
+.icon-container {
+  height: 25px;
+  margin-left: 50px;
+}
+
+.icon {
+  height: 25px;
+}
+
+.c-button:active {
+  border: 1px solid rgba(72, 107, 255, 0.2);
+  box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
+
+  &:not(.disabled) {
+    padding: 9px 39px;
+
+    &.with-icon {
+      padding: 9px 12px;
+    }
+  }
+}
+
+.c-button:hover {
+  background-color: $color-primary-darker;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+
+  &:active {
+    background-color: $color-primary;
+  }
+}
+
+.c-button {
+  background-color: $color-primary;
+  color: $color-white;
+  fill: $color-white;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: $color-disabled !important;
+  color: $color-gray;
+  box-shadow: none !important;
+  border: none !important;
+  fill: $color-gray;
+}
