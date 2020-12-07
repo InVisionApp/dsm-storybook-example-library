@@ -1,7 +1,7 @@
 import { configure, addDecorator, addParameters } from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
 import centered from '@storybook/addon-centered/html';
-import { initDsm, withDsm } from '@invisionapp/dsm-storybook';
+import { initDsm } from '@invisionapp/dsm-storybook';
 
 /**
  * To override @invisionapp/dsm-storybook custom options\theme you can use Storybook options parameter and theming
@@ -28,7 +28,6 @@ addParameters({
 addParameters({ docs: { page: null } });
 addDecorator(withA11y);
 addDecorator(centered);
-addDecorator(withDsm);
 
 //Init Dsm
 initDsm({
