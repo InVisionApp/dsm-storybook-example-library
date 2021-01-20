@@ -20,7 +20,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
-    "react-svg-inline": "2.1.1"
+    "react-svg": "^11.0.40"
   },
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",

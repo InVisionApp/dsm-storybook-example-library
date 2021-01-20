@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { closeIcon } from './icons';
+import { CloseIcon } from './icons';
 import { toastIcons } from './icons/toast-icons';
-import SVGInline from 'react-svg-inline';
+import { ReactSVG } from 'react-svg';
 
 import './_toast.scss';
 
@@ -12,9 +12,9 @@ import './_toast.scss';
 const Toast = ({ text, status }) => {
   return (
     <div key={status} className={`c-toast ${status}`}>
-      <SVGInline className={`c-toast__icon ${status}`} svg={toastIcons[status]} />
+      <ReactSVG className={`c-toast__icon ${status}`} src={toastIcons[status]} />
       <span className="c-toast__text">{text}</span>
-      <SVGInline className="c-toast__close-icon" svg={closeIcon} />
+      <CloseIcon className="c-toast__close-icon" />
     </div>
   );
 };

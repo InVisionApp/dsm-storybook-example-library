@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ReactComponent as CloseIcon } from './icons/close.svg';
+import { CloseIcon } from './icons';
 import { toastIcons } from './icons/toast-icons';
 import { ReactSVG } from 'react-svg';
 

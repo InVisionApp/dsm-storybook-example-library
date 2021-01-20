@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { chevronRightIcon } from './icons';
-import { ReactSVG } from 'react-svg';
+import { ChevronRightIcon } from './icons';
 
 import './_button.scss';
 
@@ -20,7 +19,7 @@ const Button = ({ onClick, icon, disabled, children }) => {
       <div className="c-button__content">{children}</div>
       {icon && (
         <div className="c-button__icon">
-          <ReactSVG src={chevronRightIcon} />
+          <ChevronRightIcon />
         </div>
       )}
     </button>
