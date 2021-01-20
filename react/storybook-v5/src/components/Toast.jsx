@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { closeIcon } from './icons';
+import { CloseIcon } from './icons';
 import { toastIcons } from './icons/toast-icons';
-import SVGInline from 'react-svg-inline';
 
 import './_toast.scss';
 
@@ -10,11 +9,13 @@ import './_toast.scss';
  * Toasts provide dismissable feedback\information for the user.
  * */
 const Toast = ({ text, status }) => {
+  const ToastIcon = toastIcons[status];
+
   return (
     <div key={status} className={`c-toast ${status}`}>
-      <SVGInline className={`c-toast__icon ${status}`} svg={toastIcons[status]} />
+      <ToastIcon className={`c-toast__icon ${status}`} />
       <span className="c-toast__text">{text}</span>
-      <SVGInline className="c-toast__close-icon" svg={closeIcon} />
+      <CloseIcon className="c-toast__close-icon" />
     </div>
   );
 };
