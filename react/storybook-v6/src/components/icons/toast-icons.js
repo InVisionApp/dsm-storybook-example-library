@@ -1,11 +1,11 @@
-import { flagIcon, warnIcon, checkmarkIcon, errorIcon, infoIcon } from './index';
+import { FlagIcon, WarnIcon, CheckmarkIcon, ErrorIcon, InfoIcon } from './index';
 
 const toastIcons = {
-  default: flagIcon,
-  warning: warnIcon,
-  success: checkmarkIcon,
-  error: errorIcon,
-  info: infoIcon
+  default: FlagIcon,
+  warning: WarnIcon,
+  success: CheckmarkIcon,
+  error: ErrorIcon,
+  info: InfoIcon
 };
 
 export { toastIcons };
