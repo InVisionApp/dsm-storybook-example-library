@@ -74,3 +74,4 @@ codeship.aes
 
 package-lock.json
 .yalc/
+yalc.lock
