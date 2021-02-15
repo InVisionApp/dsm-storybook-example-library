@@ -24,9 +24,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "dsm-storybook:publish": "dsm-storybook publish",
-    "dsm-storybook:preview": "dsm-storybook preview",
-    "link-dsm": "yalc add @invisionapp/dsm-storybook && chmod +x ./node_modules/.bin/dsm-storybook",
-    "remove-dsm": "yalc remove @invisionapp/dsm-storybook"
+    "dsm-storybook:preview": "dsm-storybook preview"
   },
   "browserslist": [
     ">0.2%",
