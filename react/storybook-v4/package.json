@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@invisionapp/dsm-storybook": "file:.yalc/@invisionapp/dsm-storybook",
+    "@invisionapp/dsm-storybook": "latest",
     "@storybook/addon-a11y": "4.2.0-alpha.11",
     "@storybook/addon-actions": "^4.1.18",
     "@storybook/addon-backgrounds": "^4.1.18",
@@ -42,7 +42,6 @@
     "precss": "^4.0.0",
     "raw-loader": "^4.0.0",
     "sass-loader": "^10.1.1",
-    "style-loader": "^0.23.1",
-    "yalc": "1.0.0-pre.27"
+    "style-loader": "^0.23.1"
   }
 }
