@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@invisionapp/dsm-storybook": "file:.yalc/@invisionapp/dsm-storybook",
+    "@invisionapp/dsm-storybook": "latest",
     "@storybook/addon-a11y": "^5.3.0",
     "@storybook/addon-actions": "^5.3.0",
     "@storybook/addon-backgrounds": "^5.3.0",
