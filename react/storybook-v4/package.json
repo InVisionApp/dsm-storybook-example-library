@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@invisionapp/dsm-storybook": "latest",
+    "@invisionapp/dsm-storybook": "file:.yalc/@invisionapp/dsm-storybook",
     "@storybook/addon-a11y": "4.2.0-alpha.11",
-    "@storybook/addon-actions": "4.1.18",
-    "@storybook/addon-backgrounds": "4.1.18",
-    "@storybook/addon-centered": "4.1.18",
-    "@storybook/addon-knobs": "4.1.18",
-    "@storybook/addon-options": "4.1.18",
-    "@storybook/addons": "4.1.18",
-    "@storybook/react": "4.1.18",
+    "@storybook/addon-actions": "^4.1.18",
+    "@storybook/addon-backgrounds": "^4.1.18",
+    "@storybook/addon-centered": "^4.1.18",
+    "@storybook/addon-knobs": "^4.1.18",
+    "@storybook/addon-options": "^4.1.18",
+    "@storybook/addons": "^4.1.18",
+    "@storybook/react": "^4.1.18",
     "acorn": "^6.1.1",
     "core-js": "^2.6.5",
     "prop-types": "15.6.2",
@@ -24,7 +24,9 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "dsm-storybook:publish": "dsm-storybook publish",
-    "dsm-storybook:preview": "dsm-storybook preview"
+    "dsm-storybook:preview": "dsm-storybook preview",
+    "link-dsm": "yalc add @invisionapp/dsm-storybook && chmod +x ./node_modules/.bin/dsm-storybook",
+    "remove-dsm": "yalc remove @invisionapp/dsm-storybook"
   },
   "browserslist": [
     ">0.2%",
@@ -33,13 +35,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^2.1.1",
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
     "node-sass": "^4.12.0",
     "precss": "^4.0.0",
-    "raw-loader": "1.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1"
+    "raw-loader": "^4.0.0",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^0.23.1",
+    "yalc": "1.0.0-pre.27"
   }
 }
