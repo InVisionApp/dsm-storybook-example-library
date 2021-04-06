@@ -12,8 +12,13 @@ This repository includes example library implementations in React, Vue and Angul
 
 In the selected sample directory run
 
-```
+```sh
 npm install
+
+# If you are on npm 7 and run into dependency mismatch errors you may need to use legacy
+# dependency resolution. As of April 06, 2021, there are outstanding issues in npm and Storybook
+# to resolve some dependency bugs.
+npm install --legacy-peer-deps
 ```
 
 ## Preview
