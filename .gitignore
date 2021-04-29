@@ -73,3 +73,5 @@ codeship.aes
 **/.dsm
 
 package-lock.json
+.yalc/
+yalc.lock

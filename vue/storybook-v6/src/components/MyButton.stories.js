@@ -6,6 +6,7 @@ import MyButton from './MyButton.vue';
 // https://storybook.js.org/docs/formats/component-story-format/
 export default {
   title: 'Button',
+  component: MyButton,
   decorators: [withKnobs],
   parameters: {
     // Module-Level 'in-dsm' configuration (Will apply to all stories inside the module)
@@ -17,19 +18,25 @@ export default {
   }
 };
 
-const iconValues = ['none', 'chevron-right'];
+const iconOptions = { none: null, chevronRight: 'chevron-right' };
 
-export const simpleButton = () => {
+export const simpleButton = ({ text, icon, disabled }) => {
   return {
     components: { MyButton },
     props: {
-      textKnob: { default: text('text', 'TEXT') },
-      disabledKnob: { default: boolean('disabled', false) },
-      iconKnob: { default: select('icon', iconValues, 'none') }
+      text: text,
+      disabled: disabled,
+      icon: icon
     },
     methods: { buttonClick: () => action('Button clicked')('Click') },
-    template: '<my-button :onClick=buttonClick :icon=iconKnob :disabled=disabledKnob>{{textKnob}}</my-button>'
+    template: '<my-button :onClick=buttonClick :icon=icon :disabled=disabled>{{text}}</my-button>'
   };
+};
+
+simpleButton.args = {
+  disabled: false,
+  icon: iconOptions.none,
+  text: 'Button'
 };
 
 simpleButton.story = {

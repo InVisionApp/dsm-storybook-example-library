@@ -5,13 +5,13 @@
   "dependencies": {
     "@invisionapp/dsm-storybook": "latest",
     "@storybook/addon-a11y": "4.2.0-alpha.11",
-    "@storybook/addon-actions": "4.1.18",
-    "@storybook/addon-backgrounds": "4.1.18",
-    "@storybook/addon-centered": "4.1.18",
-    "@storybook/addon-knobs": "4.1.18",
-    "@storybook/addon-options": "4.1.18",
-    "@storybook/addons": "4.1.18",
-    "@storybook/react": "4.1.18",
+    "@storybook/addon-actions": "^4.1.18",
+    "@storybook/addon-backgrounds": "^4.1.18",
+    "@storybook/addon-centered": "^4.1.18",
+    "@storybook/addon-knobs": "^4.1.18",
+    "@storybook/addon-options": "^4.1.18",
+    "@storybook/addons": "^4.1.18",
+    "@storybook/react": "^4.1.18",
     "acorn": "^6.1.1",
     "core-js": "^2.6.5",
     "prop-types": "15.6.2",
@@ -33,13 +33,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^2.1.1",
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
     "node-sass": "^4.12.0",
     "precss": "^4.0.0",
-    "raw-loader": "1.0.0",
-    "sass-loader": "^7.1.0",
+    "raw-loader": "^4.0.0",
+    "sass-loader": "^10.1.1",
     "style-loader": "^0.23.1"
   }
 }
